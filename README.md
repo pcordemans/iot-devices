@@ -2,6 +2,8 @@
 
 This is the source repository for the Devbit IoT Devices course.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/527bfa8e-39b7-451b-a551-10fd72b3bff6/deploy-status)](https://app.netlify.com/sites/devbit-iot-devices/deploys)
+
 ## Development
 
 Make sure you have Node.js installed and the following packages:

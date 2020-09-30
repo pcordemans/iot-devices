@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'iot-devices',
+  title: 'IoT Devices',
   description: 'Course for IoT Devices',
   themeConfig: {
     nav: [
@@ -7,7 +7,7 @@ module.exports = {
       { text: 'Company', link: 'https://toledo.vives.be' },
       { text: 'License', link: '/LICENSE.md' },
     ],
-    sidebar: [['/', 'Home'], ['/ethernet/', 'Ethernet']],
+    sidebar: [['/', 'Home'], ['/mbed/', 'mbed'], ['/ethernet/', 'Ethernet']], 
     repo: 'https://github.com/pcordemans/iot-devices',
     docsDir: 'docs',
     docsBranch: 'master'
