@@ -24,7 +24,7 @@ Our simple protocol will define what is to be expected in the data of this packe
 * PWM value: 1 byte value range 0-255
 * ID sender: 1 byte value range 1-254
 
-Every node, a [FRDM K64F](https://os.mbed.com/platforms/FRDM-K64F/) with [application shield](https://os.mbed.com/components/mbed-Application-Shield/), in the network has a fixed IPv4 address. This address corresponds with the template 192.168.0.xxx, where xxx is the id of the mbed FRDM-K64F box. This ID will also be used to identify the sender.
+Every node, a [FRDM K64F](https://os.mbed.com/platforms/FRDM-K64F/) with [application shield](https://os.mbed.com/components/mbed-Application-Shield/), in the network has a fixed IPv4 address. This address corresponds with the template 192.168.0.xxx, where xxx is the id of the mbed FRDM-K64F box. This ID will also be used to identify the sender. For the server use port 4000.
 
 When starting each node should be configured as a receiver or a sender. This selection is made with the joystick. When selected as a sender in a next step the id of the receiver is selected.
 
@@ -33,6 +33,8 @@ The temperature will be read from the sender, which has an LM75B temperature sen
 The PWM value should be read from a potentiometer from the sender.
 
 Upon receiving a packet the receiver will display the temperature on the C12832 display and use the PWM value to drive the RGB LED. The duty cycle should correspond linearly to the PWM value.
+
+Start from [TCP server example](https://os.mbed.com/users/pcordemans/code/tcp-server/) and [TCP client example](https://os.mbed.com/users/pcordemans/code/tcp-client/).
 
 ## Round-robin communication
 
