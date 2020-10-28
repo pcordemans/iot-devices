@@ -41,3 +41,9 @@ Start from [TCP server example](https://os.mbed.com/users/pcordemans/code/tcp-se
 In round-robin communication each node (whether it is a sender or receiver) will select a receiver ID. In receiver mode, the packet is only sent after the node has received a packet. Append the sender ID to each packet. If the packet contains the ID of the node which has received the packet, communication should stop.
 
 ![Round-robin protocol implementation](./assets/round-robin.png)
+
+## State Machine
+
+A finite state machine is a deterministic solution to control the behavior of an application without interrupts. Actions are coupled with each state and each state transition is defined.
+
+This is an example of a simple [State Machine implementation](https://os.mbed.com/users/pcordemans/code/state-example/).
